@@ -1,16 +1,16 @@
-#ifndef                            	_ICLIENT_H
-# define                            _ICLIENT_H
+#ifndef _ICLIENT_H
+# define _ICLIENT_H
 
-namespace							Ziartist
+namespace Ziartist
 {
 
-	class 							IClient
+	class IClient
 	{
 	public:
 		IClient() = default;
 		virtual ~IClient() = default;
 
-		virtual const std::string	&getIpAddr() const = 0;
+		virtual const std::string &getIpAddr() const = 0;
 	};
 }
 

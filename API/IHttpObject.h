@@ -1,19 +1,19 @@
-#ifndef                            	_IHTTPOBJECT_H
-# define                            _IHTTPOBJECT_H
+#ifndef _IHTTPOBJECT_H
+# define _IHTTPOBJECT_H
 
-# include							<map>
-# include							<string>
+# include <map>
+# include <string>
 
-namespace							Ziartist
+namespace Ziartist
 {
 
-	struct							HttpBuffer
+	struct HttpBuffer
 	{
-		uint64						length;
-		char						*data;
+		uint64 length;
+		char *data;
 	};
 
-	class 							IHttpObject
+	class IHttpObject
 	{
 	public:
 		IHttpObject() = default;
@@ -21,9 +21,9 @@ namespace							Ziartist
 
 		typedef std::map<std::string, std::string> Headers;
 
-		virtual const Headers		&getHeaders() const = 0;
-		virtual const HttpBuffer	&getHttpBuffer() const = 0;
-		virtual const std::string	&getHttpVersion() const = 0;
+		virtual const Headers &getHeaders() const = 0;
+		virtual const HttpBuffer &getHttpBuffer() const = 0;
+		virtual const std::string &getHttpVersion() const = 0;
 	};
 }
 
