@@ -4,7 +4,7 @@
 #include                           <string>
 #include		                       "IHttpObject.h"
 
-namespace		                       Ziartiste
+namespace		                       Ziartist
 {
 
   struct                           HttpStatus
