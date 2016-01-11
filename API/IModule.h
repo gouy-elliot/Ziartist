@@ -14,7 +14,7 @@ namespace Ziartist
     virtual ~IModule() = default;
   
     virtual bool onLoad(const IXmlConfig &config) = 0;
-    virtual bool onExec(IHttpExchange $exchange) = 0;
+    virtual bool onExec(IHttpExchange &exchange) = 0;
     virtual bool onPostExec() = 0;
   };
 }
