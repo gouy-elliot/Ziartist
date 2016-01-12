@@ -3,6 +3,7 @@
 
 # include "IHttpRequest.h"
 # include "IHttpResponse.h"
+# include "IClient.h"
 
 namespace Ziartist
 {
@@ -16,7 +17,7 @@ namespace Ziartist
     virtual void setHttpRequest(IHttpRequest *request) = 0;
     virtual void setHttpResponse(IHttpResponse *request) = 0;
 
-    virtual const IHttpClient &getClient() const = 0;
+    virtual const IClient &getClient() const = 0;
     virtual const IHttpRequest &getHttpRequest() const = 0;
     virtual const IHttpResponse &getHttpResponse() const = 0;
   };
